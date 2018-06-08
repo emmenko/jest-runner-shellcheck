@@ -1,0 +1,20 @@
+language: node_js
+
+env:
+  global:
+   - FORCE_COLOR=1
+
+node_js:
+  - "node"
+  - "lts/*"
+
+install:
+  - yarn
+
+cache:
+  directories:
+    - "node_modules"
+    - ~/.npm
+
+notifications:
+  email: false
