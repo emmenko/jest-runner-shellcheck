@@ -70,7 +70,7 @@ module.exports = {
   displayName: "test"
 };
 
-// jest-grapqhl-schema-linter.config.js
+// jest-shellcheck.config.js
 module.exports = {
   // your jest-runner-shellcheck options
   runner: "jest-runner-shellcheck",
