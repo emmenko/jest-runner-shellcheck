@@ -23,8 +23,8 @@
   "main": "src/index.js",
   "scripts": {
     "precommit": "lint-staged",
-    "test": "jest --config jest.test.config.js",
-    "test:watch": "jest --config jest.test.config.js --watch"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "cosmiconfig": "4.0.0",
@@ -40,8 +40,8 @@
   },
   "jest": {
     "projects": [
-      "jest-shellcheck-linter.config.js",
-      "jest-test.config.js"
+      "jest.shellcheck.config.js",
+      "jest.test.config.js"
     ]
   },
   "lint-staged": {
