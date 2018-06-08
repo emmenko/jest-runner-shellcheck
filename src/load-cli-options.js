@@ -1,6 +1,6 @@
 const cosmiconfig = require("cosmiconfig");
 
-const explorer = cosmiconfig("jest-runner-shellcheck-linter", {
+const explorer = cosmiconfig("jest-runner-shellcheck", {
   sync: true
 });
 
