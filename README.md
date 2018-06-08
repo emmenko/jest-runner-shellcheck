@@ -152,9 +152,9 @@ yarn test
 
 This project uses [cosmiconfig](https://github.com/davidtheclark/cosmiconfig), so you can provide config via:
 
-* a `jest-runner-shellcheck` property in your `package.json`
-* a `jest-runner-shellcheck.config.js` JS file
-* a `.jest-runner-shellcheckrc` JSON file
+- a `jest-runner-shellcheck` property in your `package.json`
+- a `jest-runner-shellcheck.config.js` JS file
+- a `.jest-runner-shellcheckrc` JSON file
 
 In `package.json`
 
@@ -182,11 +182,11 @@ module.exports = {
 
 The listed options are the ones provided by the `shellcheck` CLI.
 
-| option              | default | values       | example                                                            |
-| ------------------- | ------- | ------------ | ------------------------------------------------------------------ |
-| checkSourced | `false` | `false|true` | `"checkSourced": true` |
-| color | `null` | `auto|always|never` | `"color": "auto"` |
-| exclude | `null` |  | `"exclude": "CODE1,CODE2.."` |
-| format | `checkstyle` | `checkstyle|gcc|json|tty` | `"format": "json"` |
-| shell | `sh` | `sh|bash|dash|ksh` | `"shell": "bash"` |
-| externalSources | `false` | `false|true` | `"externalSources": "true"` |
+| option          | default      | values                    | example                      |
+| --------------- | ------------ | ------------------------- | ---------------------------- |
+| checkSourced    | `false`      | `false|true`              | `"checkSourced": true`       |
+| color           | `null`       | `auto|always|never`       | `"color": "auto"`            |
+| exclude         | `null`       |                           | `"exclude": "CODE1,CODE2.."` |
+| format          | `checkstyle` | `checkstyle|gcc|json|tty` | `"format": "json"`           |
+| shell           | `sh`         | `sh|bash|dash|ksh`        | `"shell": "bash"`            |
+| externalSources | `false`      | `false|true`              | `"externalSources": "true"`  |
