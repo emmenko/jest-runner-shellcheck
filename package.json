@@ -1,6 +1,6 @@
 {
   "name": "jest-runner-shellcheck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Shellcheck Linter as a Jest runner",
   "author": "Nicola Molinari <me@emmenko.org>",
   "license": "MIT",
@@ -13,7 +13,13 @@
   "bugs": {
     "url": "https://github.com/emmenko/jest-runner-shellcheck/issues"
   },
-  "keywords": ["jest", "jest-runner", "shellcheck", "bash", "lint"],
+  "keywords": [
+    "jest",
+    "jest-runner",
+    "shellcheck",
+    "bash",
+    "lint"
+  ],
   "main": "src/index.js",
   "scripts": {
     "precommit": "lint-staged",
@@ -33,7 +39,10 @@
     "prettier": "^1.13.4"
   },
   "jest": {
-    "projects": ["jest-shellcheck-linter.config.js", "jest-test.config.js"]
+    "projects": [
+      "jest-shellcheck-linter.config.js",
+      "jest-test.config.js"
+    ]
   },
   "lint-staged": {
     "*": "jest --bail --findRelatedTests"
