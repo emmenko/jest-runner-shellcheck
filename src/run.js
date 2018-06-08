@@ -12,7 +12,7 @@ module.exports = async ({ config, testPath }) => {
   const normalizeOptions = Object.keys(cliOptions)
     .reduce((cliArguments, option) => {
       const cliArg = kebabCase(option);
-      const cliVal = cliOptions[cliArg];
+      const cliVal = cliOptions[option];
       if (typeof cliVal === "boolean" && cliVal)
         return cliArguments.concat(`--${cliArg}`);
       else return cliArguments.concat(`--${cliArg}=${cliVal}`);
